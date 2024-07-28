@@ -18,12 +18,18 @@ h1 {
     padding: 10px;
 }
 
+h3 {
+    color: white;
+}
+
 .container {
-    height: 200px;
     width: 450px;
+    /* height: 450px; */
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     background-color: rgb(43, 97, 145);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .row {
@@ -31,6 +37,7 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin: 20px;
 }
 
 .row input {
@@ -60,16 +67,87 @@ button {
 
 button:hover {
     background-color: #7ee4be;
-
 }
 
 button:active {
     background-color: #196147;
-
 }
 
 .gen {
     margin: 30px;
     font-size: x-large;
     font-weight: 900;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 150px;
+    margin-right: 10px;
+}
+
+#slider-value {
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.bx {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 20px;
+    border-style: none;
+    flex-shrink: 0;
+    height: 20px;
+    width: 40px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.bx::after {
+    content: "";
+    background-color: #fff;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+}
+
+.bx:checked {
+    background-color: #6e79d6;
+}
+
+.bx:checked::after {
+    left: 22px;
+}
+
+.bx:hover {
+    background-color: #c9cbcd;
+    transition-duration: 0s;
+}
+
+.bx:checked:hover {
+    background-color: #535db3;
 }

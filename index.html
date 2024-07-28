@@ -17,8 +17,32 @@
             <div class="row">
                 <input type="text" readonly id="text-field-el">
                 <button id="copy-btn-el">Copy</button>
+                <br>
             </div>
-            <button id="generate-btn-el" class="gen">Generate</button>
+            <div class="slider-container">
+                <h3>Length:</h3>
+                <input type="range" id="slider-el" class="slider" min="8" max="24" value="8">
+                <span id="slider-value">8</span>
+            </div>
+            <div class="checkbox-container">
+                <div class="toggle">
+                    <input type="checkbox" id="lowercase-checkbox" class="bx" checked>
+                    <label for="lowercase-checkbox">Lower Case</label>
+                </div>
+                <div class="toggle">
+                    <input type="checkbox" id="uppercase-checkbox" class="bx" checked>
+                    <label for="uppercase-checkbox">Upper Case</label>
+                </div>
+                <div class="toggle">
+                    <input type="checkbox" id="numbers-checkbox" class="bx" checked>
+                    <label for="numbers-checkbox">Numbers</label>
+                </div>
+                <div class="toggle">
+                    <input type="checkbox" id="symbols-checkbox" class="bx" checked>
+                    <label for="symbols-checkbox">Symbols</label>
+                </div> <button id="generate-btn-el" class="gen">Generate</button>
+
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
